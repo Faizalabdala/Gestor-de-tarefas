@@ -23,7 +23,7 @@ function AddTasks({ onAddTasksSubmit }) {
       <button
         onClick={() => {
           // Verificar se os campos foram preenchidos
-          if (!title.trim || !Description.trim) {
+          if (!title.trim() || !Description.trim()) {
             return alert("Preencha o título e a descrição!");
           }
 
